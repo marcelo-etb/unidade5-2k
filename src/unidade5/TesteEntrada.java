@@ -5,7 +5,9 @@ public class TesteEntrada {
         String nome = JOptionPane.showInputDialog("Digite seu nome");
         double salario = Double.parseDouble(
                 JOptionPane.showInputDialog("Digite o salário"));
-        double salarioLiquido = salario * 0.89;
+        float imposto = Float.parseFloat(
+                JOptionPane.showInputDialog("% do imposto"));
+        double salarioLiquido = salario - (salario * imposto / 100);
         String resultado = "Nome: " + nome + "\n" +
                 "Salário Bruto: R$ " + salario + "\n" +
                 "Salário Líquido: R$ " + salarioLiquido;        
