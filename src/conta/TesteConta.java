@@ -18,7 +18,7 @@ public class TesteConta {
 //        System.out.println("Número: " + c.getNumero());
 //        System.out.println("Saldo: " + c.getSaldo());
 
-        ContaEspecial ce = new ContaEspecial(456, "Priscila", 100);
+        ContaEspecial ce = new ContaEspecial(456, "Priscila", 500);
         if (ce.sacar(100)) {
             System.out.println("Saque efetuado com sucesso!");
         } else {
